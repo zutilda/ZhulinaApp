@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="@string/Log"
+                android:text="@string/LogIn"
                 android:textColor="@color/mainColor"
                 android:textSize="40sp"
                 android:textStyle="bold"
