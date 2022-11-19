@@ -36,17 +36,18 @@
                 android:layout_width="350dp"
                 android:layout_height="55dp"
                 android:layout_marginStart="26dp"
-                android:layout_marginEnd="26dp"
                 android:layout_marginTop="40dp"
-                android:text="@string/FullName"
-                android:textSize="14sp"
-                android:textColor="@color/forTxt"
-                android:paddingLeft="25dp"
+                android:layout_marginEnd="26dp"
                 android:background="@drawable/border_txt"
-                app:layout_constraintTop_toBottomOf="@+id/txtReg"
+                android:paddingLeft="25dp"
+                android:hint="@string/FullName"
+                android:textColorHint="@color/forTxt"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/Et_Phone_Email"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/Et_Phone_Email"/>
+                app:layout_constraintTop_toBottomOf="@+id/txtReg" />
 
             <EditText
                 android:id="@+id/Et_Phone_Email"
@@ -55,8 +56,8 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginEnd="26dp"
                 android:layout_marginTop="15dp"
-                android:text="@string/EnterPhone"
-                android:textColor="@color/forTxt"
+                android:hint="@string/EnterPhone"
+                android:textColorHint="@color/forTxt"
                 android:paddingLeft="25dp"
                 android:background="@drawable/border_txt"
                 android:textSize="14sp"
@@ -72,15 +73,15 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="26dp"
+                android:padding="5dp"
                 android:text="@string/txtAgree"
                 android:textColor="@color/forTxt"
                 android:textSize="14sp"
-                android:padding="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editPassword"
                 app:layout_constraintBottom_toTopOf="@+id/btnReg"
-                />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPassword" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edPasswordReg"
