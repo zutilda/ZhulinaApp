@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/Log"
+                android:textColor="@color/mainColor"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/edt_EmailPhone"
+                app:layout_constraintStart_toStartOf="@+id/edt_EmailPhone"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_EmailPhone"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/border_txt"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/EnterPhone"
+                android:textColor="@color/forTxt"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/edt_Password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLog" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_Password"
+                android:layout_width="350sp"
+                android:layout_height="55sp"
+                android:layout_marginTop="17sp"
+                android:textColorHint="@color/forTxt"
+                app:layout_constraintBottom_toTopOf="@+id/txtForget"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_EmailPhone"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/mainColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@id/edt_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_txt"
+                    android:textColorHint="@color/forTxt"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="26sp"
+                    android:textSize="14sp"
+                    tools:ignore="RtlSymmetry" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtForget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/ForgetPass"
+                android:textColor="@color/forTxt"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/chkBox"
+                app:layout_constraintEnd_toEndOf="@+id/edt_Password"
+                app:layout_constraintTop_toBottomOf="@+id/edt_Password" />
+
+
+            <CheckBox
+                android:id="@+id/chkBox"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:padding="10dp"
+                android:text="@string/Remember"
+                android:textColor="@color/forTxt"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnLogIn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtForget" />
+
+            <android.widget.Button
+                android:id="@+id/btnLogIn"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/btn_style"
+                android:text="Login"
+                android:textColor="@color/forTxt"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txtOR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chkBox" />
+
+            <TextView
+                android:id="@+id/txtOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="OR"
+                android:textColor="@color/forTxt"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+
+            <android.widget.Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/btn_style"
+                android:text="GOOGLE"
+                android:textColor="@color/forTxt"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
+                app:layout_constraintStart_toEndOf="@+id/btnFacebook"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtOR" />
+
+            <android.widget.Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25sp"
+                android:background="@drawable/btn_style"
+                android:text="FACEBOOK"
+                android:textColor="@color/forTxt"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnGoogle"
+                app:layout_constraintTop_toBottomOf="@+id/txtOR" />
+
+            <TextView
+                android:id="@+id/txtLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="45dp"
+                android:onClick="onRegister"
+                android:text="@string/HaveAccount"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnGoogle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFacebook" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

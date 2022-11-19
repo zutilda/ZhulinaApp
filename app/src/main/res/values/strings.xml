@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ZhulinaApp</string>
+    <string name="AppName">App Name</string>
+    <string name="Text">Lorem ipsum dolor sit amet, consectetur</string>
+    <string name="txtTeam"><font color="#E28FA8">Product of</font><font color="#DB6A8C"><b> Team Name</b></font></string>
+    <string name="Reg">Register</string>
+    <string name="FullName">Full Name</string>
+    <string name="EnterPhone">Enter Email / Phone Number</string>
+    <string name="tAgree">I agree with terms &amp; conditions</string>
+    <string name="tAlready"><font color="#E28FA8">Already registered ?Let’s </font><font color="#DB6A8C"><b>Login</b></font></string>
+    <string name="Account">Account Created\nSuccessfully</string>
+    <string name="Log">Log In</string>
+    <string name="ForgetPass">Forget Password?</string>
+    <string name="Remember">Remember Password</string>
+    <string name="HaveAccount"><font color="#E28FA8">Dont’ have an account? Let’s  </font><font color="#DB6A8C"><b>Register</b></font></string>
+</resources>
